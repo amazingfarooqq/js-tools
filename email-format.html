@@ -94,13 +94,20 @@
                 </div>
                 <div class="mb-3">
                     <label for="formatInput" class="form-label">Select Email Format:</label>
-                    <select class="form-select" id="formatInput">
+                    <select class="form-select" id="formatInput" onchange="toggleCustomFormat()">
                         <option value="dots">Separated by Dots (.)</option>
                         <option value="underscores">Separated by Underscores (_)</option>
                         <option value="firstLetters">First Letter of Each Word</option>
                         <option value="firstTwoLetters">First Two Letters of Each Word</option>
                         <option value="firstAndSecond">First Letter of First + Full Second Word</option>
+                        <option value="customGmail">Custom Gmail Format</option>
+                        <option value="custom">Custom Format</option>
                     </select>
+                </div>
+                <div id="customFormatDiv" class="mb-3" style="display: none;">
+                    <label for="customFormatInput" class="form-label">Enter Custom Format:</label>
+                    <input type="text" class="form-control" id="customFormatInput" placeholder="e.g., {f}{l}">
+                    <small class="form-text text-muted">Use {f} for first name, {l} for last name, {m} for middle name(s)</small>
                 </div>
                 <div class="mb-3">
                     <label for="domainInput" class="form-label">Select Email Domain:</label>
@@ -123,10 +130,27 @@
     </div>
 
     <script>
+        function toggleCustomFormat() {
+            const formatInput = document.getElementById('formatInput');
+            const customFormatDiv = document.getElementById('customFormatDiv');
+            const customFormatInput = document.getElementById('customFormatInput');
+            
+            if (formatInput.value === 'custom') {
+                customFormatDiv.style.display = 'block';
+                customFormatInput.value = '{f}{l}';
+            } else if (formatInput.value === 'customGmail') {
+                customFormatDiv.style.display = 'block';
+                customFormatInput.value = '{f}.{l}';
+            } else {
+                customFormatDiv.style.display = 'none';
+            }
+        }
+
         function generateEmails() {
             const names = document.getElementById('nameInput').value.trim().split('\n');
             const format = document.getElementById('formatInput').value;
             const domain = document.getElementById('domainInput').value;
+            const customFormat = document.getElementById('customFormatInput').value;
             const emailOutput = document.getElementById('emailOutput');
             
             let emails = names.map(name => {
@@ -153,6 +177,13 @@
                             emailName = nameParts[0]; // Fallback for single-word names
                         }
                         break;
+                    case 'customGmail':
+                    case 'custom':
+                        emailName = customFormat
+                            .replace('{f}', nameParts[0])
+                            .replace('{l}', nameParts[nameParts.length - 1])
+                            .replace('{m}', nameParts.slice(1, -1).join(''));
+                        break;
                     default:
                         emailName = nameParts.join('.');
                 }
@@ -162,6 +193,9 @@
 
             emailOutput.textContent = emails;
         }
+
+        // Initialize the custom format visibility
+        toggleCustomFormat();
     </script>
 </body>
 </html>
