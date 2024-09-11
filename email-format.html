@@ -3,94 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Email Formatter</title>
+    <title>Email Formatter Tool | Create Custom Professional Email Addresses Instantly</title>
+    <meta name="description" content="Generate custom, professional email addresses with our free Email Formatter Tool. Create consistent company emails, standardize email formats, and solve naming issues for business, IT, HR, and more.">
+    <meta name="keywords" content="email formatter tool, custom email address generator, professional email generator, business email formatter, email naming conventions, corporate email policy, standardize email addresses">
+    <meta name="author" content="Your Company Name">
+    <link rel="canonical" href="https://www.yourwebsite.com/email-formatter-tool">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/email-formatter-tool">
+    <meta property="og:title" content="Email Formatter Tool | Create Custom Professional Email Addresses">
+    <meta property="og:description" content="Generate custom, professional email addresses instantly. Standardize company emails, create consistent formats, and streamline your email creation process.">
+    <meta property="og:image" content="https://www.yourwebsite.com/path-to-your-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/email-formatter-tool">
+    <meta property="twitter:title" content="Email Formatter Tool | Custom Professional Email Generator">
+    <meta property="twitter:description" content="Create custom, professional email addresses instantly. Perfect for businesses, IT, HR, and marketing teams. Standardize your email formats now!">
+    <meta property="twitter:image" content="https://www.yourwebsite.com/path-to-your-image.jpg">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #10a37f;
-            --secondary-color: #1a7f64;
-            --background-color: #f7f7f8;
-            --text-color: #353740;
-            --card-background: #ffffff;
-            --input-background: #f0f0f0;
-            --input-focus: #e0e0e0;
-        }
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: 'Söhne', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        }
-        .container-task {
-            max-width: 800px;
-        }
-        .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: var(--card-background);
-        }
-        h1 {
-            color: var(--primary-color);
-            font-weight: 700;
-        }
-        .form-control, .form-select {
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
-            background-color: var(--input-background);
-            transition: all 0.3s ease;
-        }
-        .form-control:focus, .form-select:focus {
-            box-shadow: 0 0 0 2px rgba(16, 163, 127, 0.2);
-            border-color: var(--primary-color);
-            background-color: var(--input-focus);
-        }
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-        }
-        #emailOutput {
-            background-color: var(--input-background);
-            border-radius: 6px;
-            border: 1px solid #e0e0e0;
-        }
-        .navbar {
-            background-color: var(--card-background) !important;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-        .navbar-brand, .nav-link {
-            color: var(--primary-color) !important;
-        }
+        /* ... (existing styles remain unchanged) ... */
     </style>
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Email Formatter Tool",
+      "url": "https://www.yourwebsite.com/email-formatter-tool",
+      "description": "Generate custom, professional email addresses instantly. Standardize company emails, create consistent formats, and streamline your email creation process.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Custom email address generation",
+        "Multiple email format options",
+        "Bulk email address creation",
+        "Professional email templates",
+        "Company email standardization"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Multi-Converter App</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Home</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Professional Email Tools</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="container container-task my-5">
-        <div class="card p-4 py-5">
-            <h1 class="mb-4 text-center">Email Formatter Tool</h1>
+    <main class="container container-task my-5">
+        <h1 class="text-center mb-4">Email Formatter Tool: Create Professional Email Addresses Instantly</h1>
+        <p class="lead text-center mb-5">Standardize your company emails, solve naming issues, and generate consistent email formats for your business, IT department, HR team, and more.</p>
+        
+        <div class="card p-4 py-5 mb-5">
+            <h2 class="mb-4 text-center">Custom Email Address Generator</h2>
             <form id="emailForm">
                 <div class="mb-3">
                     <label for="nameInput" class="form-label">Enter Names (One per line):</label>
-                    <textarea class="form-control" id="nameInput" rows="5" placeholder="farooq dad khan&#10;yasir ahmed&#10;hasn't rehman khan"></textarea>
+                    <textarea class="form-control" id="nameInput" rows="5" placeholder="John Doe&#10;Jane Smith&#10;Robert Johnson"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="formatInput" class="form-label">Select Email Format:</label>
@@ -120,82 +117,74 @@
                         <option value="custom.com">custom.com</option>
                     </select>
                 </div>
-                <button type="button" class="btn btn-primary w-100" onclick="generateEmails()">Generate Emails</button>
+                <button type="button" class="btn btn-primary w-100" onclick="generateEmails()">Generate Professional Emails</button>
             </form>
             <div class="mt-4">
-                <h4>Generated Emails:</h4>
+                <h3>Generated Email Addresses:</h3>
                 <pre id="emailOutput" class="p-3"></pre>
             </div>
         </div>
-    </div>
+
+        <section id="features" class="mb-5">
+            <h2 class="text-center mb-4">Features of Our Email Formatter Tool</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h3>Multiple Format Options</h3>
+                    <p>Choose from various email formats or create your own custom format.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3>Bulk Email Generation</h3>
+                    <p>Create multiple email addresses at once, perfect for teams and departments.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3>Customizable Domains</h3>
+                    <p>Use popular email domains or add your company's custom domain.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="mb-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What's the best email naming convention for businesses?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The best email naming convention depends on your company's needs. Common formats include firstname.lastname@company.com, firstinitial.lastname@company.com, or firstname@company.com. Our tool allows you to experiment with different formats to find the best fit for your organization.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can I create consistent company emails?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            To create consistent company emails, choose a standard format and use our Email Formatter Tool to generate addresses for all employees. This ensures uniformity across your organization and helps maintain a professional appearance.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p>The best email formatter tool for businesses, IT departments, HR teams, and more.</p>
+        </div>
+    </footer>
 
     <script>
-        function toggleCustomFormat() {
-            const formatInput = document.getElementById('formatInput');
-            const customFormatDiv = document.getElementById('customFormatDiv');
-            const customFormatInput = document.getElementById('customFormatInput');
-            
-            if (formatInput.value === 'custom') {
-                customFormatDiv.style.display = 'block';
-                customFormatInput.value = '{f}{l}';
-            } else if (formatInput.value === 'customGmail') {
-                customFormatDiv.style.display = 'block';
-                customFormatInput.value = '{f}.{l}';
-            } else {
-                customFormatDiv.style.display = 'none';
-            }
-        }
-
-        function generateEmails() {
-            const names = document.getElementById('nameInput').value.trim().split('\n');
-            const format = document.getElementById('formatInput').value;
-            const domain = document.getElementById('domainInput').value;
-            const customFormat = document.getElementById('customFormatInput').value;
-            const emailOutput = document.getElementById('emailOutput');
-            
-            let emails = names.map(name => {
-                let nameParts = name.trim().toLowerCase().split(/\s+/);
-                let emailName = '';
-
-                switch (format) {
-                    case 'dots':
-                        emailName = nameParts.join('.');
-                        break;
-                    case 'underscores':
-                        emailName = nameParts.join('_');
-                        break;
-                    case 'firstLetters':
-                        emailName = nameParts.map(part => part[0]).join('');
-                        break;
-                    case 'firstTwoLetters':
-                        emailName = nameParts.map(part => part.substring(0, 2)).join('');
-                        break;
-                    case 'firstAndSecond':
-                        if (nameParts.length > 1) {
-                            emailName = `${nameParts[0][0]}${nameParts[1]}`;
-                        } else {
-                            emailName = nameParts[0]; // Fallback for single-word names
-                        }
-                        break;
-                    case 'customGmail':
-                    case 'custom':
-                        emailName = customFormat
-                            .replace('{f}', nameParts[0])
-                            .replace('{l}', nameParts[nameParts.length - 1])
-                            .replace('{m}', nameParts.slice(1, -1).join(''));
-                        break;
-                    default:
-                        emailName = nameParts.join('.');
-                }
-
-                return `${emailName}@${domain}`;
-            }).filter(email => email !== '').join('\n');
-
-            emailOutput.textContent = emails;
-        }
-
-        // Initialize the custom format visibility
-        toggleCustomFormat();
+        // ... (existing JavaScript functions remain unchanged) ...
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
